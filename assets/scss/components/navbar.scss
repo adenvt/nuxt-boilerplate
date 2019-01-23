@@ -1,0 +1,15 @@
+.navbar {
+  padding: 0;
+
+  &-header {
+    padding: 0.5em 0.35em;
+    text-align: center;
+    width: 220px;
+  }
+}
+
+.bg {
+  &-danger {
+    background-color: #e74c3c !important;
+  }
+}

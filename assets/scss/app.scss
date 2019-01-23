@@ -3,7 +3,15 @@
 @import 'vendor/bootstrap';;
 // Layouts
 @import 'layouts/base';
+@import 'layouts/sidebar';
+@import 'layouts/content';
+
 // Components
+@import 'components/navbar';
 @import 'components/logo';
+@import 'components/avatar';
+@import 'components/dropdown';
+@import 'components/breadcrumb';
+
 // Pages
 @import 'pages/index';;

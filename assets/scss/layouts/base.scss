@@ -45,3 +45,10 @@ html {
   background-color: #35495e;
   color: #fff;
 }
+
+body {
+  background-color: $grey;
+  font-family: $font-primary;
+  font-size: 0.85em;
+  font-weight: 400;
+}
