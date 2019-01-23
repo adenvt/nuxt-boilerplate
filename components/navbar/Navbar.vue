@@ -3,11 +3,15 @@
     <b-navbar
       toggleable="md"
       type="dark"
-      variant="danger">
+      variant="default">
 
       <div class="navbar-header">
         <b-navbar-brand href="#">DASHBOARD</b-navbar-brand>
       </div>
+
+      <b-navbar-nav>
+        <b-nav-item href="#">Link</b-nav-item>
+      </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown

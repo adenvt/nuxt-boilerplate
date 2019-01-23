@@ -5,12 +5,12 @@
 
 // Layouts
 @import 'layouts/base';
-@import 'layouts/sidebar';
 @import 'layouts/content';
 @import 'layouts/login';
 
 // Components
 @import 'components/navbar';
+@import 'layouts/sidebar';
 @import 'components/logo';
 @import 'components/avatar';
 @import 'components/dropdown';
