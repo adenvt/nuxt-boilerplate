@@ -1,0 +1,13 @@
+.breadcrumb {
+  background-color: $white;
+  border-radius: 0;
+  padding: 1.25em;
+
+  &-item {
+    font-size: 0.85em;
+
+    a {
+      color: $font-color-secondary;
+    }
+  }
+}
