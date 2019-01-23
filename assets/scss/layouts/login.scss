@@ -1,0 +1,89 @@
+.page {
+  background-color: $white;
+  border: 1px solid fade-out($black, 0.9);
+  border-radius: 3px;
+  box-shadow: 0 2px 10px fade-out($black, 0.9);
+  max-width: 26em;
+  width: 26em;
+
+  &-header {
+    padding: 1.5em;
+    text-align: center;
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.25em;
+    }
+
+    span {
+      background-color: $white;
+      color: fade-out($black, 0.6);
+      font-size: 0.9em;
+      padding: 0 1em;
+      position: relative;
+      z-index: 10;
+
+      &::after {
+        background-color: fade-out($black, 0.8);
+        bottom: 0.5em;
+        content: '';
+        height: 1px;
+        left: -3em;
+        position: absolute;
+        width: calc(100% + 6em);
+        z-index: -1;
+      }
+    }
+  }
+
+  &-content {
+    padding: 0 2.5em 2em;
+    text-align: left;
+
+    .form {
+      &-control {
+        font-size: 1em;
+        height: 3em;
+
+        &:focus {
+          border: 1px solid $asphalt;
+          box-shadow: none;
+        }
+
+        // &::-webkit-input-placeholder {
+        //   color: fade-out($font-color-secondary, 0.5);
+        //   font-size: 0.85em;
+        // }
+
+        // &::-moz-placeholder {
+        //   color: fade-out($font-color-secondary, 0.5);
+        //   font-size: 0.85em;
+        // }
+
+        // &:-ms-input-placeholder {
+        //   color: fade-out($font-color-secondary, 0.5);
+        //   font-size: 0.85em;
+        // }
+
+        // &:-moz-placeholder {
+        //   color: fade-out($font-color-secondary, 0.5);
+        //   font-size: 0.85em;
+        // }
+      }
+    }
+
+    .col {
+      &-form {
+        &-label {
+          color: fade-out($font-color-secondary, 0.5);
+          font-size: 0.85em;
+          font-weight: 600;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

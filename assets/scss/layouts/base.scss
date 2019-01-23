@@ -52,3 +52,17 @@ body {
   font-size: 0.85em;
   font-weight: 400;
 }
+
+.font {
+  &-red {
+    color: $maroon;
+  }
+
+  &-asphalt {
+    color: $asphalt;
+  }
+
+  &-small {
+    font-size: 0.85em;
+  }
+}

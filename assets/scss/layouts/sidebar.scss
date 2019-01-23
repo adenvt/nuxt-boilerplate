@@ -12,6 +12,7 @@
   &-nav {
     list-style: none;
     padding-left: 0;
+    padding-right: 0;
   }
 
   .nav {
@@ -51,6 +52,8 @@
 
     &-child {
       margin-top: 0.5em;
+      padding-left: 0;
+      padding-right: 0;
       
       .nav {
         &-item {
