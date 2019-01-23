@@ -1,10 +1,13 @@
 @import 'variables/variables';
 // Vendor
-@import 'vendor/bootstrap';;
+@import 'vendor/bootstrap';
+@import 'vendor/animate';
+
 // Layouts
 @import 'layouts/base';
 @import 'layouts/sidebar';
 @import 'layouts/content';
+@import 'layouts/login';
 
 // Components
 @import 'components/navbar';
@@ -12,6 +15,7 @@
 @import 'components/avatar';
 @import 'components/dropdown';
 @import 'components/breadcrumb';
+@import 'components/button';
 
 // Pages
 @import 'pages/index';;

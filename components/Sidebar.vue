@@ -12,7 +12,7 @@
           <span>Dashboard</span>
 
           <b-collapse id="collapse1">
-            <b-navbar-nav class="nav-child">
+            <b-navbar-nav class="nav-child animated fadeInLeft faster">
               <b-nav-item href="#">
                 <span>Dashboard 1</span>
               </b-nav-item>
@@ -43,7 +43,7 @@
           <span>Elements</span>
 
           <b-collapse id="collapse2">
-            <b-navbar-nav class="nav-child">
+            <b-navbar-nav class="nav-child animated fadeInLeft faster">
               <b-nav-item href="#">
                 <span>Button</span>
               </b-nav-item>
@@ -74,12 +74,41 @@
           <span>Forms</span>
 
           <b-collapse id="collapse3">
-            <b-navbar-nav class="nav-child">
+            <b-navbar-nav class="nav-child animated fadeInLeft faster">
               <b-nav-item href="#">
                 <span>Standart</span>
               </b-nav-item>
               <b-nav-item href="#">
                 <span>Extended</span>
+              </b-nav-item>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-nav-item>
+
+        <div class="nav-heading">
+          <span>Extras</span>
+        </div>
+
+        <b-nav-item
+          v-b-toggle="'collapse4'"
+          aria-controls="collapse4"
+          href="#">
+          <i class="icon-doc"/>
+          <span>Pages</span>
+
+          <b-collapse id="collapse4">
+            <b-navbar-nav class="nav-child animated fadeInLeft faster">
+              <b-nav-item href="#">
+                <span>Login</span>
+              </b-nav-item>
+              <b-nav-item href="#">
+                <span>Register</span>
+              </b-nav-item>
+              <b-nav-item href="#">
+                <span>Not Found</span>
+              </b-nav-item>
+              <b-nav-item href="#">
+                <span>Maintenance</span>
               </b-nav-item>
             </b-navbar-nav>
           </b-collapse>
