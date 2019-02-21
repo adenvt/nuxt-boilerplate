@@ -2,14 +2,30 @@
   padding: 0;
 
   &-header {
-    padding: 0.5em 0.35em;
+    background-color: fade-out($black, 0.9);
+    padding: 0.5em;
     text-align: center;
     width: 220px;
+  }
+
+  &-nav {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
 .bg {
   &-danger {
     background-color: #e74c3c !important;
+  }
+
+  &-default {
+    background-color: $asphalt !important;
+  }
+}
+
+.nav {
+  &-link {
+    padding: 0.75em 1em;
   }
 }
