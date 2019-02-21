@@ -44,6 +44,7 @@
 </template>
 <script>
 export default {
+  layout : 'blank',
   methods: {
     submit () {
       this.$router.push({ path: '/dashboard' })

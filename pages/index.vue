@@ -1,5 +1,7 @@
-<template>
-  <div class="container">
-    <h1>Under Maintenance</h1>
-  </div>
-</template>
+<script>
+export default {
+  asyncData ({ redirect }) {
+    return redirect('/dashboard')
+  },
+}
+</script>
