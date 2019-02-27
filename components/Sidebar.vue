@@ -22,7 +22,7 @@
             </b-navbar-nav>
           </b-collapse>
         </b-nav-item>
-        <b-nav-item href="#">
+        <b-nav-item href="/widgets/card">
           <i class="icon-grid"/>
           <span>Widgets</span>
         </b-nav-item>
