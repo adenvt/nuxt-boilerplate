@@ -44,24 +44,48 @@
 
           <b-collapse id="collapse2">
             <b-navbar-nav class="nav-child animated fadeInLeft faster">
-              <b-nav-item href="#">
-                <span>Button</span>
-              </b-nav-item>
-              <b-nav-item href="#">
-                <span>Notification</span>
-              </b-nav-item>
-              <b-nav-item href="#">
-                <span>Carousel</span>
-              </b-nav-item>
-              <b-nav-item href="#">
-                <span>Sweet Alert</span>
-              </b-nav-item>
-              <b-nav-item href="#">
-                <span>Dropdown</span>
-              </b-nav-item>
-              <b-nav-item href="#">
-                <span>Cards</span>
-              </b-nav-item>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Button</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Carousel</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Cards</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Dropdown</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Notification</span>
+                </router-link>
+              </li>
+              <li class="nav-item">
+                <router-link
+                  to="/elements/table"
+                  class="nav-link">
+                  <span>Tables</span>
+                </router-link>
+              </li>
             </b-navbar-nav>
           </b-collapse>
         </b-nav-item>
@@ -98,7 +122,7 @@
 
           <b-collapse id="collapse4">
             <b-navbar-nav class="nav-child animated fadeInLeft faster">
-              <b-nav-item href="#">
+              <b-nav-item href="/login">
                 <span>Login</span>
               </b-nav-item>
               <b-nav-item href="#">
