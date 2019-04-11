@@ -1,0 +1,12 @@
+.card {
+  &-header {
+    padding: 1em 1.25em;
+
+    h6 {
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 0;
+    }
+  }
+}

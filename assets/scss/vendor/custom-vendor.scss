@@ -1,0 +1,11 @@
+// DATEPICKER
+.vdp {
+  &-datepicker {
+    &__calendar {
+      border: 1px solid transparent !important;
+      border-radius: 3px !important;
+      box-shadow: 0 5px 10px fade-out($black, 0.9);
+      right: 0;
+    }
+  }
+}
