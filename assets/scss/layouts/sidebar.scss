@@ -1,14 +1,20 @@
 .aside {
   &-container {
-    background-color: $white;
-    border-right: 1px solid fade-out($black, 0.9);
+    background-color: $asphalt;
     height: 100vh;
+    margin-left: 0;
     overflow: auto;
     padding-bottom: 4em;
     padding-top: 4em;
-    position: absolute;
+    position: fixed;
     top: 0;
+    transition: margin-left 0.2s ease-in-out;
     width: 220px;
+
+    &.minimize {
+      margin-left: -220px;
+      transition: margin-left 0.2s ease-in-out;
+    }
   }
 }
 
@@ -21,7 +27,7 @@
 
   .nav {
     &-heading {
-      color: fade-out($font-color-secondary, 0.4);
+      color: fade-out($white, 0.4);
       font-size: 0.9em;
       font-weight: 600;
       margin-bottom: 0.5em;
@@ -30,45 +36,74 @@
     }
 
     &-item {
-      border-left: 4px solid transparent;
-      padding: 0 1.25em;
+      position: relative;
+    }
 
-      &:hover {
-        border-left: 4px solid $maroon;
-        transition: all 0.2s ease-in-out;
-      }
+    &-item[aria-expanded=true] {
+      background-color: fade-out($black, 0.8);
     }
 
     &-link {
-      color: $font-color-secondary;
-      font-size: 1em;
+      color: $white;
+      font-size: 0.85em;
       font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 1.25em 2em;
+      text-transform: uppercase;
 
       &:hover {
-        color: $font-color-danger;
+        background-color: $dark-asphalt;
+        color: $yellow;
         text-decoration: none;
       }
 
+      &.nuxt-link-active {
+        background-color: $dark-asphalt;
+        color: $yellow;
+      }
+
       span {
-        padding-left: 0.5em;
+        padding-left: 1.25em;
       }
     }
 
     &-child {
-      margin-top: 0.5em;
       padding-left: 0;
       padding-right: 0;
-      
-      .nav {
-        &-item {
-          border-left: 4px solid transparent;
-          padding: 0 1em;
-        }
 
+      .nav {
         &-link {
-          font-size: 0.9em;
+          padding-left: 3.6em;
         }
       }
+    }
+
+    &-dropdown {
+      &.open {
+        background-color: fade-out($asphalt, 0.9);
+
+        > .nav-dropdown-items {
+          max-height: 1500px;
+        }
+      }
+
+      &-toggle {
+        position: relative;
+      }
+
+      &-items {
+        margin: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+
+  .collapse {
+    &.show {
+      background-color: fade-out($black, 0.8);
     }
   }
 }

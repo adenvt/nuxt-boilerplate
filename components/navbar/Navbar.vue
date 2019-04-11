@@ -2,11 +2,10 @@
   <div class="tob-navbar">
     <b-navbar
       toggleable="md"
-      type="dark"
-      variant="default">
+      variant="light">
 
       <div class="navbar-header">
-        <b-navbar-brand href="#">DASHBOARD</b-navbar-brand>
+        <b-navbar-brand href="#">BOILERPLATE</b-navbar-brand>
       </div>
 
       <b-navbar-nav>
