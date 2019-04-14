@@ -1,4 +1,5 @@
 @import 'variables/variables';
+
 // Vendor
 @import 'vendor/bootstrap';
 @import 'vendor/animate';
@@ -11,11 +12,18 @@
 // Components
 @import 'components/navbar';
 @import 'layouts/sidebar';
+@import 'components/tables';
 @import 'components/logo';
 @import 'components/avatar';
 @import 'components/dropdown';
 @import 'components/breadcrumb';
 @import 'components/button';
+@import 'components/card';
+@import 'components/form';
+@import 'components/widgets';
 
 // Pages
-@import 'pages/index';;
+@import 'pages/index';
+
+// Custom Vendor
+@import 'vendor/custom-vendor';

@@ -1,0 +1,82 @@
+@mixin box-shadow ($x-axis: 0, $y-axis: 2px, $blur: 2px, $color: $grey) {
+  box-shadow: $x-axis $y-axis $blur $color;
+}
+
+.widget {
+  @include box-shadow(0, 2px, 4px, fade-out($black, 0.9));
+  font-size: 0.85em;
+
+  &.no-border {
+    border: 0;
+  }
+
+  &-thumbnails {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+
+    img {
+      border-radius: 50%;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+
+      &.img {
+        &-thumb {
+          border: 2px solid fade-out($asphalt, 0.8);
+          padding: 1px;
+        }
+      }
+    }
+  }
+
+  &-meta {
+    color: $asphalt;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+    h3 {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    span {
+      color: fade-out($asphalt, 0.5);
+      font-size: 1em;
+    }
+  }
+
+  &-description {
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+  }
+
+  &-share {
+    span {
+      color: $font-color-danger;
+      font-weight: 600;
+
+      &:first-child {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  &-icon {
+    color: fade-out($black, 0.5);
+    font-size: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+
+    i,
+    span {
+      color: $font-color-danger;
+      display: block;
+      font-size: 2.25em;
+      font-weight: 300;
+      margin-bottom: 0.25em;
+      margin-top: 0.25em;
+    }
+  }
+}
