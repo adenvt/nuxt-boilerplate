@@ -20,16 +20,16 @@ export default {
         ].join(',')
 
         const input = $(selector).eq(0)
-        let el      = input
+        let element = input
 
         if (input.is('.custom-radio'))
-          el = input.parents('[role="radiogroup"]')
+          element = input.parents('[role="radiogroup"]')
         else if (input.is('.select2-hidden-accessible'))
-          el = input.next('.select2').find('.select2-selection')
+          element = input.next('.select2').find('.select2-selection')
         else if (input.is('.custom-file'))
-          el = input.next()
+          element = input.next()
 
-        el.focus().animateCss('shake')
+        element.focus().animateCss('shake')
       })
 
       return false

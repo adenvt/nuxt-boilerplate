@@ -6,4 +6,4 @@ export const state = () => {
 
 export const mutations = { ...defaultMutations(state()) }
 
-export const plugins = [ EasyAccess() ]
+export const plugins = [EasyAccess()]

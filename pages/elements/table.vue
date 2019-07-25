@@ -11,42 +11,52 @@
             :label-cols="3"
             horizontal
             label-size="md"
-            label="Per Page">
+            label="Per Page"
+          >
             <b-col
               md="6"
-              lg="6">
+              lg="6"
+            >
               <b-form-select
                 v-model="params.limit"
-                :options="pageOptions"/>
+                :options="pageOptions"
+              />
             </b-col>
           </b-form-group>
         </b-col>
         <b-col md="6">
           <b-input-group
-            horizontal>
+            horizontal
+          >
             <b-col
               md="4"
-              class="text-right p-1">
+              class="text-right p-1"
+            >
               Select Date
             </b-col>
             <b-col md="4">
               <datepicker
                 v-model="range.start"
                 bootstrap-styling
-                format="dd MMM yyyy" />
+                format="dd MMM yyyy"
+              />
             </b-col>
             <b-col md="4">
               <datepicker
                 v-model="range.end"
                 bootstrap-styling
-                format="dd MMM yyyy" />
+                format="dd MMM yyyy"
+              />
             </b-col>
           </b-input-group>
         </b-col>
         <b-col md="2">
           <b-button
             size="sm"
-            variant="warning btn-block">Export</b-button>
+            variant="warning btn-block"
+          >
+            Export
+          </b-button>
         </b-col>
       </b-row>
 
@@ -60,7 +70,8 @@
                 </b-input-group-text>
                 <b-form-select
                   v-model="params.limit"
-                  :options="pageOptions"/>
+                  :options="pageOptions"
+                />
               </b-input-group>
             </b-col>
             <b-col md="4">
@@ -68,7 +79,7 @@
                 <b-input-group-text slot="prepend">
                   Maketing Code
                 </b-input-group-text>
-                <b-form-input/>
+                <b-form-input />
               </b-input-group>
             </b-col>
             <b-col md="4">
@@ -76,7 +87,7 @@
                 <b-input-group-text slot="prepend">
                   Area Code
                 </b-input-group-text>
-                <b-form-input/>
+                <b-form-input />
               </b-input-group>
             </b-col>
           </b-row>
@@ -84,15 +95,18 @@
         <b-col md="5">
           <b-input-group>
             <template slot="append">
-              <b-btn variant="primary">Search</b-btn>
+              <b-btn variant="primary">
+                Search
+              </b-btn>
             </template>
-            <b-form-input placeholder="Enter Your Keywords"/>
+            <b-form-input placeholder="Enter Your Keywords" />
           </b-input-group>
         </b-col>
       </b-row>
       <b-table
         :items="items"
-        hover/>
+        hover
+      />
     </b-card>
   </div>
 </template>
@@ -101,16 +115,28 @@
 import moment from 'moment'
 const items = [
   {
-    isActive  : true, age       : 40, first_name: 'Dickerson', last_name : 'Macdonald',
+    isActive  : true,
+    age       : 40,
+    first_name: 'Dickerson',
+    last_name : 'Macdonald',
   },
   {
-    isActive  : false, age       : 21, first_name: 'Larsen', last_name : 'Shaw',
+    isActive  : false,
+    age       : 21,
+    first_name: 'Larsen',
+    last_name : 'Shaw',
   },
   {
-    isActive  : false, age       : 89, first_name: 'Geneva', last_name : 'Wilson',
+    isActive  : false,
+    age       : 89,
+    first_name: 'Geneva',
+    last_name : 'Wilson',
   },
   {
-    isActive  : true, age       : 38, first_name: 'Jami', last_name : 'Carney',
+    isActive  : true,
+    age       : 38,
+    first_name: 'Jami',
+    last_name : 'Carney',
   },
 ]
 export default {

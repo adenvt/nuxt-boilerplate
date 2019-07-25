@@ -1,12 +1,12 @@
 <template>
   <div class="wrapper">
-    <navbar/>
+    <navbar />
 
-    <sidebar/>
+    <sidebar />
 
     <section class="content-wrapper">
       <div class="content-heading">
-        <breadcrumb/>
+        <breadcrumb />
       </div>
 
       <nuxt />
@@ -15,14 +15,13 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
 import Navbar from '@/components/navbar/Navbar.vue'
 import Sidebar from '@/components/Sidebar.vue'
 import Breadcrumb from '@/components/Breadcrumbs.vue'
 
 export default {
   components: {
-    Logo, Navbar, Sidebar, Breadcrumb,
+    Navbar, Sidebar, Breadcrumb,
   },
 }
 </script>

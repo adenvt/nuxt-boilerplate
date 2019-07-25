@@ -6,7 +6,8 @@
           <span class="widget-thumbnails mb-2">
             <img
               src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"
-              class="img-fluid img-thumb">
+              class="img-fluid img-thumb"
+            >
           </span>
 
           <div class="widget-meta">
