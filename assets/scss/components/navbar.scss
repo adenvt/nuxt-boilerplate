@@ -1,5 +1,6 @@
 .navbar {
   padding: 0;
+  z-index: 9;
 
   &-header {
     background-color: fade-out($black, 0.9);

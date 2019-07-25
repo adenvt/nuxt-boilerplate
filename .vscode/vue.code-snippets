@@ -1,0 +1,184 @@
+{
+  "Axios request": {
+    "scope": "javascript",
+    "prefix": "this.$axios",
+    "body": [
+      "this.\\$axios.${1|get,post,put,delete|}('/${2:$WORKSPACE_NAME}/${3:url/to/endpoint}')",
+      "  .then((response) => {",
+      "    $0",
+      "  })",
+      "  .catch((err) => {",
+      "    console.error(err)",
+      "",
+      "    this.\\$notify({",
+      "      type : 'error',",
+      "      title: '${4:Request} Failed',",
+      "      text : getErrMsg(err),",
+      "    })",
+      "  })",
+    ],
+    "description": "Create ajax request using axios"
+  },
+  "Axios request with overlay": {
+    "scope": "javascript",
+    "prefix": "this.$axios",
+    "body": [
+      "this.\\$overlay(true)",
+      "",
+      "this.\\$axios.${1|get,post,put,delete|}('/${2:$WORKSPACE_NAME}/${3:url/to/endpoint}')",
+      "  .then((response) => {",
+      "    $0",
+      "  })",
+      "  .catch((err) => {",
+      "    console.error(err)",
+      "",
+      "    this.\\$notify({",
+      "      type : 'error',",
+      "      title: '${4:Request} Failed',",
+      "      text : getErrMsg(err),",
+      "    })",
+      "  })",
+      "  .then(() => {",
+      "    this.\\$overlay(false)",
+      "  })"
+    ],
+    "description": "Create ajax request using axios with overlay"
+  },
+  "Import lodash": {
+    "scope": "javascript",
+    "prefix": "import lodash",
+    "body": "import _ from 'lodash'",
+    "description": "Import lodash",
+  },
+  "Import moment": {
+    "scope": "javascript",
+    "prefix": "import moment",
+    "body": "import moment from 'moment'",
+    "description": "Import moment",
+  },
+  "Import getErrMsg() utils": {
+    "scope": "javascript",
+    "prefix": "import getErrMsg",
+    "body": "import { getErrMsg } from '@/utils'",
+    "description": "Import getErrMsg() utils",
+  },
+  "Import defaultMutations": {
+    "scope": "javascript",
+    "prefix": "import defaultMutations",
+    "body": "import { defaultMutations } from 'vuex-easy-access'",
+    "description": "import defaultMutations from vuex-easy-access",
+  },
+  "Import components": {
+    "scope": "javascript",
+    "prefix": "import component",
+    "body": "import ${1:Component} from '@/components/$0$1'",
+    "description": "import component from components directory",
+  },
+  "Axios response": {
+    "scope": "javascript",
+    "prefix": ".then",
+    "body": [
+      ".then((${1:response}) => {",
+      "  $0",
+      "})"
+    ],
+    "description": "Axios response"
+  },
+  "Catch Error": {
+    "scope": "javascript",
+    "prefix": ".catch",
+    "body": [
+      ".catch((err) => {",
+      "  console.error(err)",
+      "",
+      "  this.\\$notify({",
+      "    type : 'error',",
+      "    title: '${1:Request} Failed',",
+      "    text : getErrMsg(err),",
+      "  })",
+      "})",
+    ],
+    "description": "Catch promise error",
+  },
+  "Response body data": {
+    "scope": "javascript",
+    "prefix": "res.data",
+    "body": "response.data.data.$0",
+    "description": "Response body data"
+  },
+  "Vue component data": {
+    "scope": "javascript",
+    "prefix": "data ()",
+    "body": [
+      "data () {",
+      "  return {",
+      "    $0",
+      "  }",
+      "},",
+    ],
+    "description": "Vue component data"
+  },
+  "Overlay": {
+    "scope": "javascript",
+    "prefix": "this.overlay",
+    "body": "this.\\$overlay(${1|true,false|})",
+    "description": "Set overlay true or false",
+  },
+  "Promise": {
+    "scope": "javascript",
+    "prefix": "new Promise",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "  $0",
+      "})"
+    ]
+  },
+  "Notify": {
+    "scope": "javascript",
+    "prefix": "this.$notify",
+    "body": [
+      "this.\\$notify({",
+      "  type : '${1|success,warning,error|}',",
+      "  title: '${2:Title}',",
+      "  text : '${3:Description}',",
+      "})",
+    ]
+  },
+  "Sweat Alert": {
+    "scope": "javascript",
+    "prefix": "this.$swal",
+    "body": [
+      "this.\\$swal({",
+      "  type : '${1|success,warning,error,info,question|}',",
+      "  title: '${2:Title}',",
+      "  text : '${3:Description}',",
+      "})"
+    ]
+  },
+  "Store get": {
+    "scope": "javascript",
+    "prefix": "store.get",
+    "body": [
+      "${1:this.$}store.get('$0')"
+    ],
+    "description": "Vuex easy access: get state"
+  },
+  "Store set": {
+    "scope": "javascript",
+    "prefix": "store.set",
+    "body": "${1:this.$}store.set('${2:key}', ${3:value})",
+    "description": "Vuex easy access: set state"
+  },
+  "Store dispatch": {
+    "scope": "javascript",
+    "prefix": "store.dispatch",
+    "body": "${1:this.$}store.dispatch('$0')",
+    "description": "Store dispatch",
+  },
+  "Axios code": {
+    "scope": "javascript",
+    "prefix": "code",
+    "body": "const code = parseInt(err.response && err.response.status)",
+    "description": "Get error response code"
+  }
+}

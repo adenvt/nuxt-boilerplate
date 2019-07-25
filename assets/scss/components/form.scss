@@ -1,0 +1,48 @@
+.input {
+  &-group {
+    &-text {
+      font-size: 0.9em;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.375em 0.65em;
+    }
+
+    .btn {
+      font-size: 0.9em;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .form {
+      &-control {
+        height: 2rem;
+      }
+    }
+  }
+}
+
+.form {
+  &-control {
+    font-size: 1em;
+    letter-spacing: 0.03em;
+
+    &:focus {
+      border: 1px solid $asphalt;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      font-size: 0.9em;
+    }
+  }
+
+  &-control[readonly] {
+    background-color: $white;
+  }
+}
+
+.custom {
+  &-select {
+    height: 2rem;
+  }
+}

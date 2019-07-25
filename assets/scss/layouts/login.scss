@@ -50,25 +50,10 @@
           box-shadow: none;
         }
 
-        // &::-webkit-input-placeholder {
-        //   color: fade-out($font-color-secondary, 0.5);
-        //   font-size: 0.85em;
-        // }
-
-        // &::-moz-placeholder {
-        //   color: fade-out($font-color-secondary, 0.5);
-        //   font-size: 0.85em;
-        // }
-
-        // &:-ms-input-placeholder {
-        //   color: fade-out($font-color-secondary, 0.5);
-        //   font-size: 0.85em;
-        // }
-
-        // &:-moz-placeholder {
-        //   color: fade-out($font-color-secondary, 0.5);
-        //   font-size: 0.85em;
-        // }
+        &::placeholder {
+          color: fade-out($font-color-secondary, 0.5);
+          font-size: 0.85em;
+        }
       }
     }
 
