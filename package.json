@@ -28,7 +28,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.27",
     "cross-env": "^5.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nuxt": "^2.8.1",
     "nuxt-simple-line-icons": "^1.0.2",
     "vuejs-datepicker": "^1.6.2",
